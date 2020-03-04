@@ -28,9 +28,9 @@ document.addEventListener("DOMContentLoaded", e=>{
   
         let $res = document.querySelector("#lblRespuesta");
         if(opcion.value == "moneda"){
-          $res.innerHTML = `Respuesta: ${ (monedas[a]/monedas[de]*cantidad).toFixed(2) }`;
+          $res.innerHTML = `Respuesta: ${ (monedas[a]/monedas[de]*cantidad).toFixed(20) }`;
         } else if(opcion.value == "longitud"){
-          $res.innerHTML = `Respuesta: ${ (longitudes[a]/longitudes[de]*cantidad).toFixed(2) }`;
+          $res.innerHTML = `Respuesta: ${ (longitudes[a]/longitudes[de]*cantidad).toFixed(20) }`;
         };
     });
   });
