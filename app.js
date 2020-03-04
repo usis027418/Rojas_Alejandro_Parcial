@@ -10,16 +10,21 @@ document.addEventListener("DOMContentLoaded", e=>{
   
         let monedas = {
             "dolar":1,
-            "euro":0.93,
-            "quetzal":7.63,
-            "lempira":24.9,
-            "cordoba":34.19},
+            "Colones(SV)":8.75,
+            "Yenes":111.27,
+            "Rupia":68.75,
+            "Lempiras":24.36,
+            "Peso(MX)":19.36,
+            "Bitcoin":0200026},
             longitudes = {
-              "mm": 1000,
-              "cm": 100,
-              "mt": 1,
-              "km": 0.001,
-              "milla": 0.000621371};
+              "Metro": 1,
+              "Centimetro": 100,
+              "Pulgada": 39.3701,
+              "Pie": 3.28084,
+              "Varas": 1.1963081929167,
+                "Yardas":1.09361,
+                "Kilometros":0.001,
+                "Millas":0.000621371};
   
         let $res = document.querySelector("#lblRespuesta");
         if(opcion.value == "moneda"){
