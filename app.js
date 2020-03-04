@@ -12,10 +12,10 @@ document.addEventListener("DOMContentLoaded", e=>{
             "dolar":1,
             "colones(sv)":8.75,
             "yenes":111.27,
-            "rupia":68.75,
+            "rupia":69.75,
             "lempiras":24.36,
-            "peso(MX)":19.36,
-            "bitcoin":0200026},
+            "peso(mx)":19.36,
+            "bitcoin":0.00026},
             longitudes = {
               "metro": 1,
               "centimetro": 100,
