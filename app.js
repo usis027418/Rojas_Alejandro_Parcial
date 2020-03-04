@@ -28,9 +28,9 @@ document.addEventListener("DOMContentLoaded", e=>{
   
         let $res = document.querySelector("#lblRespuesta");
         if(opcion.value == "moneda"){
-          $res.innerHTML = `Respuesta: ${ (monedas[a]/monedas[de]*cantidad).toFixed(20) }`;
+          $res.innerHTML = `Respuesta: ${ (monedas[a]/monedas[de]*cantidad).toFixed(10) }`;
         } else if(opcion.value == "longitud"){
-          $res.innerHTML = `Respuesta: ${ (longitudes[a]/longitudes[de]*cantidad).toFixed(20) }`;
+          $res.innerHTML = `Respuesta: ${ (longitudes[a]/longitudes[de]*cantidad).toFixed(10) }`;
         };
     });
   });
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", e=>{
     a1.innerHTML="";
   
     if(opcion.value == "moneda"){
-      var  array = ["dolar!Dolar","colones(sv)!Colones(SV)","yenes!Yenes","rupia!Rupia","lempiras!Lempiras","peso(mx)!Peso(MX)","bitcoin!Bitcoin"]; 
+      var  array = ["dolar!Dolar","colones(sv)!Colones(SV)","yenes!Yenes","rupia!Rupia","lempiras!Lempiras","peso(mx)!Peso(MX)","bitcoin!BitCoin"]; 
     } else if(opcion.value == "longitud"){
       var array = ["metro!Metro","centimetro!Centimetro","pulgada!Pulgada","pie!Pie","varas!Varas","yardas!Yardas","kilometros!Kilometros","millas!Millas"];
     };
