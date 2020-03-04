@@ -19,29 +19,13 @@ document.addEventListener("DOMContentLoaded", e=>{
               "cm": 100,
               "mt": 1,
               "km": 0.001,
-              "milla": 0.000621371},
-              almacenamiento = {
-                "bit": 8,
-                "byte": 1,
-                "kb": 0.001,
-                "mb": 0.000001,
-                "gb":0.000000001},
-                peso = {
-                  "gramo": 1000,
-                  "kg": 1,
-                  "libra": 2.20462,
-                  "onza": 35.274,
-                  "tonelada": 0.01};
+              "milla": 0.000621371};
   
         let $res = document.querySelector("#lblRespuesta");
         if(opcion.value == "moneda"){
           $res.innerHTML = `Respuesta: ${ (monedas[a]/monedas[de]*cantidad).toFixed(2) }`;
         } else if(opcion.value == "longitud"){
           $res.innerHTML = `Respuesta: ${ (longitudes[a]/longitudes[de]*cantidad).toFixed(2) }`;
-        } else if(opcion.value == "almacenamiento"){
-          $res.innerHTML = `Respuesta: ${ (almacenamiento[a]/almacenamiento[de]*cantidad) }`;
-        } else if(opcion.value == "peso"){
-          $res.innerHTML = `Respuesta: ${ (peso[a]/peso[de]*cantidad).toFixed(2) }`;
         };
     });
   });
@@ -59,10 +43,6 @@ document.addEventListener("DOMContentLoaded", e=>{
       var  array = ["dolar!Dolar","euro!Euro","quetzal!Quetzal","lempira!Lempira","cordoba!Cordoba"]; 
     } else if(opcion.value == "longitud"){
       var array = ["mm!MM","cm!CM","mt!MT","km!KM","milla!Milla"];
-    } else if(opcion.value == "almacenamiento"){
-      var array = ["bit!Bit","byte!Byte","kb!KB","mb!MB","gb!GB"];
-    } else if(opcion.value == "peso"){
-      var array = ["gramo!Gramo","kg!KG","libra!Libra","onza!Onza","tonelada!Tonelada"];
     };
   
     for(var i=0;i<array.length;i++){ 
